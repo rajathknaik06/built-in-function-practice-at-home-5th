@@ -1,0 +1,24 @@
+""" Implement a program that takes a text string as input and determines the smallest and largest ASCII characters present in the text using the min() and max() functions. 
+
+
+
+You should find the ASCII values for each character in the string and identify the smallest and largest among them.
+
+Input format :
+The input consists of a single line of input containing a text string.
+
+Output format :
+The first line prints "Smallest ASCII Value: " followed by the smallest ASCII value of the character found in the text.
+
+The second line prints "Largest ASCII Value: " followed by the largest ASCII value of the character found in the text.
+
+"""
+
+
+text = input()
+
+smallest_ascii = min(ord(char) for char in text)
+largest_ascii = max(ord(char) for char in text)
+
+print(f"Smallest ASCII Value: {smallest_ascii}")
+print(f"Largest ASCII Value: {largest_ascii}")
